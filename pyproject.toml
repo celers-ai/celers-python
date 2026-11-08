@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "celers"
+version = "0.1.0"
+description = "Write Celers automations in Python: the same boards the Celers canvas shows"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Celers" }]
+keywords = ["rpa", "automation", "celers", "workflow", "citrix"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://celers.org"
+
+[project.scripts]
+celers = "celers.cli:main"
+
+[tool.setuptools]
+packages = ["celers"]
+
+[tool.setuptools.package-data]
+celers = ["catalogue.json"]

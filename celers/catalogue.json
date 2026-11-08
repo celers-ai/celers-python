@@ -1,0 +1,1127 @@
+{
+ "steps": {
+  "api_request": {
+   "engine": "web",
+   "label": "API Request",
+   "ports": [],
+   "settings": [
+    "allowErrorStatus",
+    "body",
+    "headers",
+    "method",
+    "outputVariable",
+    "url"
+   ]
+  },
+  "ask_person": {
+   "engine": "web",
+   "label": "Ask a Person",
+   "ports": [],
+   "settings": [
+    "defaultAnswer",
+    "kind",
+    "notify",
+    "onReject",
+    "onTimeout",
+    "options",
+    "outputVariable",
+    "question",
+    "selector",
+    "timeoutMinutes"
+   ]
+  },
+  "assert": {
+   "engine": "web",
+   "label": "Assert",
+   "ports": [],
+   "settings": [
+    "condition",
+    "message"
+   ]
+  },
+  "break_loop": {
+   "engine": "web",
+   "label": "Break Loop",
+   "ports": [],
+   "settings": [
+    "message",
+    "scope"
+   ]
+  },
+  "catch": {
+   "engine": "web",
+   "label": "Catch",
+   "ports": [],
+   "settings": [
+    "exception"
+   ]
+  },
+  "citrix_launch": {
+   "engine": "desktop",
+   "label": "Citrix Launch",
+   "ports": [],
+   "settings": [
+    "forceNew",
+    "icaFile",
+    "launchCommand",
+    "maximize",
+    "readyTarget",
+    "waitSeconds",
+    "windowSize",
+    "windowTitle"
+   ]
+  },
+  "citrix_reconnect": {
+   "engine": "desktop",
+   "label": "Citrix Reconnect",
+   "ports": [],
+   "settings": [
+    "always",
+    "icaFile",
+    "launchCommand",
+    "readyTarget",
+    "waitSeconds",
+    "windowTitle"
+   ]
+  },
+  "click": {
+   "engine": "web",
+   "label": "Click",
+   "ports": [],
+   "settings": [
+    "extract",
+    "extractAs",
+    "extractAttribute",
+    "offsetX",
+    "offsetY",
+    "optional",
+    "optionalSeconds",
+    "preferXpath",
+    "selector",
+    "text",
+    "xpath"
+   ]
+  },
+  "click_table_cell": {
+   "engine": "web",
+   "label": "Click Table Cell",
+   "ports": [],
+   "settings": [
+    "clickCellIfNoLink",
+    "column",
+    "ifMissing",
+    "match",
+    "matchColumn",
+    "matchMode",
+    "matchValue",
+    "table"
+   ]
+  },
+  "db_insert": {
+   "engine": "web",
+   "label": "DB Insert Row",
+   "ports": [],
+   "settings": [
+    "outputVariable",
+    "table",
+    "values"
+   ]
+  },
+  "db_lookup": {
+   "engine": "web",
+   "label": "DB Lookup",
+   "ports": [],
+   "settings": [
+    "column",
+    "filter",
+    "ifMissing",
+    "table",
+    "variable"
+   ]
+  },
+  "db_read": {
+   "engine": "web",
+   "label": "DB Read Rows",
+   "ports": [],
+   "settings": [
+    "columns",
+    "filter",
+    "limit",
+    "match",
+    "orderBy",
+    "orderDir",
+    "table",
+    "variable"
+   ]
+  },
+  "db_update": {
+   "engine": "web",
+   "label": "DB Update Row",
+   "ports": [],
+   "settings": [
+    "expect",
+    "key",
+    "keyFrom",
+    "onConflict",
+    "outputVariable",
+    "rowVariable",
+    "set",
+    "table"
+   ]
+  },
+  "desktop_attach_window": {
+   "engine": "desktop",
+   "label": "Attach Window",
+   "ports": [],
+   "settings": [
+    "closeDialogs",
+    "maximize",
+    "process",
+    "startAt",
+    "surface",
+    "windowSize",
+    "windowTitle"
+   ]
+  },
+  "desktop_check": {
+   "engine": "desktop",
+   "label": "Is On Screen",
+   "ports": [],
+   "settings": [
+    "extractAs",
+    "seconds",
+    "target"
+   ]
+  },
+  "desktop_click": {
+   "engine": "desktop",
+   "label": "Desktop Click",
+   "ports": [],
+   "settings": [
+    "button",
+    "double",
+    "extract",
+    "extractAs",
+    "inputMode",
+    "offsetX",
+    "offsetY",
+    "optional",
+    "optionalSeconds",
+    "readySeconds",
+    "repeat",
+    "target",
+    "timeout",
+    "untilTarget",
+    "verify",
+    "verifySeconds",
+    "verifyTarget"
+   ]
+  },
+  "desktop_click_cell": {
+   "engine": "desktop",
+   "label": "Click Table Cell (desktop)",
+   "ports": [],
+   "settings": [
+    "clickColumn",
+    "double",
+    "matchColumn",
+    "matchValue",
+    "optional",
+    "rowIndex",
+    "table",
+    "verify"
+   ]
+  },
+  "desktop_click_row_cell": {
+   "engine": "desktop",
+   "label": "Click Cell in Row (desktop)",
+   "ports": [],
+   "settings": [
+    "clickType",
+    "column",
+    "matchColumns",
+    "optional",
+    "rowVariable",
+    "scrollBy",
+    "scrollNotches",
+    "scrollPages",
+    "table",
+    "verify"
+   ]
+  },
+  "desktop_clipboard": {
+   "engine": "desktop",
+   "label": "Clipboard",
+   "ports": [],
+   "settings": [
+    "extractAs",
+    "operation",
+    "value"
+   ]
+  },
+  "desktop_close_app": {
+   "engine": "desktop",
+   "label": "Close App",
+   "ports": [],
+   "settings": [
+    "kill",
+    "process",
+    "timeout",
+    "windowTitle"
+   ]
+  },
+  "desktop_do_while": {
+   "engine": "desktop",
+   "label": "Do While (desktop)",
+   "ports": [
+    "body",
+    "next"
+   ],
+   "settings": []
+  },
+  "desktop_extract_table": {
+   "engine": "desktop",
+   "label": "Read Table",
+   "ports": [],
+   "settings": [
+    "afterRead",
+    "area",
+    "columnNames",
+    "columnTypes",
+    "extractAs",
+    "headerRow",
+    "headerText",
+    "hscrollBy",
+    "hscrollLeftTarget",
+    "hscrollNotches",
+    "hscrollPages",
+    "hscrollRightTarget",
+    "keyColumn",
+    "maxRows",
+    "nextPage",
+    "nextPages",
+    "rowLines",
+    "scrollBy",
+    "scrollNotches",
+    "scrollPages",
+    "scrollTarget",
+    "source",
+    "stopAt",
+    "tableEnd",
+    "target"
+   ]
+  },
+  "desktop_file_dialog": {
+   "engine": "desktop",
+   "label": "File Dialog",
+   "ports": [],
+   "settings": [
+    "dialogTitle",
+    "ifExists",
+    "path"
+   ]
+  },
+  "desktop_for_each_row": {
+   "engine": "desktop",
+   "label": "For Each Row (desktop)",
+   "ports": [
+    "body",
+    "next"
+   ],
+   "settings": []
+  },
+  "desktop_get_text": {
+   "engine": "desktop",
+   "label": "Read Text",
+   "ports": [],
+   "settings": [
+    "extractAs",
+    "optional",
+    "optionalSeconds",
+    "pattern",
+    "readHeight",
+    "readOffsetX",
+    "readOffsetY",
+    "readWidth",
+    "source",
+    "target"
+   ]
+  },
+  "desktop_hotkey": {
+   "engine": "desktop",
+   "label": "Press Keys",
+   "ports": [],
+   "settings": [
+    "key",
+    "modifiers",
+    "repeat",
+    "target"
+   ]
+  },
+  "desktop_if": {
+   "engine": "desktop",
+   "label": "If (desktop)",
+   "ports": [
+    "true",
+    "false",
+    "next"
+   ],
+   "settings": [
+    "recordColumn",
+    "recordWhenFalse",
+    "recordWhenTrue"
+   ]
+  },
+  "desktop_on_popup": {
+   "engine": "desktop",
+   "label": "When a Popup Comes",
+   "ports": [],
+   "settings": [
+    "button",
+    "process",
+    "windowTitle"
+   ]
+  },
+  "desktop_open_app": {
+   "engine": "desktop",
+   "label": "Open App",
+   "ports": [],
+   "settings": [
+    "args",
+    "maximize",
+    "path",
+    "waitSeconds",
+    "windowSize",
+    "windowTitle"
+   ]
+  },
+  "desktop_read_fields": {
+   "engine": "desktop",
+   "label": "Read Fields",
+   "ports": [],
+   "settings": [
+    "area",
+    "direction",
+    "fields",
+    "image",
+    "source"
+   ]
+  },
+  "desktop_screenshot": {
+   "engine": "desktop",
+   "label": "Screenshot",
+   "ports": [],
+   "settings": [
+    "extractAs",
+    "label",
+    "target"
+   ]
+  },
+  "desktop_scroll": {
+   "engine": "desktop",
+   "label": "Desktop Scroll",
+   "ports": [],
+   "settings": [
+    "amount",
+    "direction",
+    "maxScrolls",
+    "target",
+    "untilTarget"
+   ]
+  },
+  "desktop_select": {
+   "engine": "desktop",
+   "label": "Select Item",
+   "ports": [],
+   "settings": [
+    "inputMode",
+    "item",
+    "target"
+   ]
+  },
+  "desktop_type": {
+   "engine": "desktop",
+   "label": "Desktop Type",
+   "ports": [],
+   "settings": [
+    "clearFirst",
+    "credential",
+    "credentialUuid",
+    "dateFormat",
+    "inputMode",
+    "optional",
+    "optionalSeconds",
+    "pressAfter",
+    "target",
+    "totpUuid",
+    "typeMode",
+    "value"
+   ]
+  },
+  "desktop_wait": {
+   "engine": "desktop",
+   "label": "Desktop Wait",
+   "ports": [],
+   "settings": [
+    "quietSeconds",
+    "seconds",
+    "target",
+    "until",
+    "windowTitle"
+   ]
+  },
+  "desktop_while": {
+   "engine": "desktop",
+   "label": "While (desktop)",
+   "ports": [
+    "body",
+    "next"
+   ],
+   "settings": []
+  },
+  "detect_platform": {
+   "engine": "web",
+   "label": "Detect Platform",
+   "ports": [],
+   "settings": [
+    "extra",
+    "outputVariable",
+    "website",
+    "what"
+   ]
+  },
+  "do_while": {
+   "engine": "web",
+   "label": "Do While Loop",
+   "ports": [
+    "body",
+    "next"
+   ],
+   "settings": []
+  },
+  "element_action": {
+   "engine": "web",
+   "label": "Element Action",
+   "ports": [],
+   "settings": [
+    "attribute",
+    "elements",
+    "index",
+    "operation",
+    "outputVariable",
+    "pressEnter",
+    "target",
+    "text",
+    "withinBy",
+    "withinValue"
+   ]
+  },
+  "elif": {
+   "engine": "web",
+   "label": "Else If",
+   "ports": [
+    "true",
+    "false"
+   ],
+   "settings": [
+    "recordColumn",
+    "recordWhenFalse",
+    "recordWhenTrue"
+   ]
+  },
+  "else": {
+   "engine": "web",
+   "label": "Else",
+   "ports": [],
+   "settings": []
+  },
+  "excel_design": {
+   "engine": "web",
+   "label": "Design Workbook",
+   "ports": [],
+   "settings": [
+    "design",
+    "ifExists",
+    "path"
+   ]
+  },
+  "excel_read": {
+   "engine": "web",
+   "label": "Read Excel",
+   "ports": [],
+   "settings": [
+    "filter",
+    "limit",
+    "path",
+    "sheet",
+    "variable"
+   ]
+  },
+  "excel_write": {
+   "engine": "web",
+   "label": "Write Excel",
+   "ports": [],
+   "settings": [
+    "content",
+    "ifExists",
+    "keyColumn",
+    "numberColumn",
+    "path",
+    "setColumns",
+    "sheet",
+    "variable"
+   ]
+  },
+  "extract_cards": {
+   "engine": "web",
+   "label": "Extract Cards",
+   "ports": [],
+   "settings": [
+    "addToExisting",
+    "cardSelector",
+    "cardXpath",
+    "fields",
+    "ifNone",
+    "includeSection",
+    "maxPages",
+    "nextSelector",
+    "onlyFields",
+    "outputVariable",
+    "statusColumn",
+    "titleColumn",
+    "waitSeconds"
+   ]
+  },
+  "extract_data": {
+   "engine": "web",
+   "label": "Extract Data",
+   "ports": [],
+   "settings": [
+    "addToExisting",
+    "cardXpath",
+    "columns",
+    "combine",
+    "enableSemantics",
+    "fields",
+    "ifNone",
+    "itemRole",
+    "key",
+    "maxPages",
+    "method",
+    "nextSelector",
+    "outputVariable",
+    "parentName",
+    "parentRole",
+    "path",
+    "rename",
+    "source",
+    "waitSeconds",
+    "xpath"
+   ]
+  },
+  "extract_element": {
+   "engine": "web",
+   "label": "Extract Element",
+   "ports": [],
+   "settings": [
+    "attribute",
+    "outputVariable",
+    "selector",
+    "xpath"
+   ]
+  },
+  "extract_table": {
+   "engine": "web",
+   "label": "Extract Table",
+   "ports": [],
+   "settings": [
+    "addToExisting",
+    "includeLinkColumns",
+    "maxPages",
+    "nextSelector",
+    "outputVariable",
+    "selector",
+    "xpath"
+   ]
+  },
+  "extract_text": {
+   "engine": "web",
+   "label": "Extract Text",
+   "ports": [],
+   "settings": [
+    "attribute",
+    "outputVariable",
+    "selector",
+    "xpath"
+   ]
+  },
+  "fill_form": {
+   "engine": "web",
+   "label": "Fill Form",
+   "ports": [],
+   "settings": [
+    "expect",
+    "rowVariable",
+    "skipColumns",
+    "submit"
+   ]
+  },
+  "finally": {
+   "engine": "web",
+   "label": "Finally",
+   "ports": [],
+   "settings": []
+  },
+  "find_contacts": {
+   "engine": "web",
+   "label": "Find Contacts",
+   "ports": [],
+   "settings": [
+    "outputVariable",
+    "website"
+   ]
+  },
+  "find_elements": {
+   "engine": "web",
+   "label": "Find Elements",
+   "ports": [],
+   "settings": [
+    "by",
+    "fields",
+    "ifNone",
+    "match",
+    "outputVariable",
+    "scope",
+    "value",
+    "waitSeconds"
+   ]
+  },
+  "for": {
+   "engine": "web",
+   "label": "For Each Row",
+   "ports": [
+    "body",
+    "next"
+   ],
+   "settings": []
+  },
+  "handle_dialog": {
+   "engine": "web",
+   "label": "Handle Dialog",
+   "ports": [],
+   "settings": [
+    "action",
+    "outputVariable",
+    "seconds",
+    "text"
+   ]
+  },
+  "if": {
+   "engine": "web",
+   "label": "If / Else",
+   "ports": [
+    "true",
+    "false",
+    "next"
+   ],
+   "settings": [
+    "recordColumn",
+    "recordWhenFalse",
+    "recordWhenTrue"
+   ]
+  },
+  "list_files": {
+   "engine": "web",
+   "label": "List Files",
+   "ports": [],
+   "settings": [
+    "folder",
+    "outputVariable",
+    "pattern",
+    "recursive"
+   ]
+  },
+  "log": {
+   "engine": "web",
+   "label": "Log",
+   "ports": [],
+   "settings": [
+    "message"
+   ]
+  },
+  "marketing_research": {
+   "engine": "web",
+   "label": "Research into the marketing workbook",
+   "ports": [],
+   "settings": [
+    "connection",
+    "limit",
+    "outputVariable",
+    "path",
+    "queries",
+    "site",
+    "what"
+   ]
+  },
+  "mobile_check": {
+   "engine": "mobile",
+   "label": "Is On Screen (phone)",
+   "ports": [],
+   "settings": [
+    "seconds",
+    "storeAs",
+    "target"
+   ]
+  },
+  "mobile_close_app": {
+   "engine": "mobile",
+   "label": "Close App (phone)",
+   "ports": [],
+   "settings": [
+    "package"
+   ]
+  },
+  "mobile_connect": {
+   "engine": "mobile",
+   "label": "Connect Phone",
+   "ports": [],
+   "settings": [
+    "serial",
+    "wifiAddress"
+   ]
+  },
+  "mobile_get_text": {
+   "engine": "mobile",
+   "label": "Read Text (phone)",
+   "ports": [],
+   "settings": [
+    "optional",
+    "pattern",
+    "scrollTo",
+    "storeAs",
+    "target",
+    "timeout"
+   ]
+  },
+  "mobile_key": {
+   "engine": "mobile",
+   "label": "Press Button (phone)",
+   "ports": [],
+   "settings": [
+    "key",
+    "repeat"
+   ]
+  },
+  "mobile_open_app": {
+   "engine": "mobile",
+   "label": "Open App (phone)",
+   "ports": [],
+   "settings": [
+    "activity",
+    "package",
+    "restart",
+    "waitSeconds"
+   ]
+  },
+  "mobile_read_list": {
+   "engine": "mobile",
+   "label": "Read List (phone)",
+   "ports": [],
+   "settings": [
+    "endAfter",
+    "item",
+    "linkTemplate",
+    "loadWait",
+    "maxItems",
+    "maxScrolls",
+    "storeAs"
+   ]
+  },
+  "mobile_screenshot": {
+   "engine": "mobile",
+   "label": "Screenshot (phone)",
+   "ports": [],
+   "settings": [
+    "name",
+    "storeAs"
+   ]
+  },
+  "mobile_swipe": {
+   "engine": "mobile",
+   "label": "Swipe",
+   "ports": [],
+   "settings": [
+    "direction",
+    "distance",
+    "times",
+    "untilTarget",
+    "within"
+   ]
+  },
+  "mobile_tap": {
+   "engine": "mobile",
+   "label": "Tap",
+   "ports": [],
+   "settings": [
+    "extract",
+    "extractAs",
+    "holdSeconds",
+    "long",
+    "offsetX",
+    "offsetY",
+    "optional",
+    "optionalSeconds",
+    "repeat",
+    "scrollTo",
+    "target",
+    "timeout"
+   ]
+  },
+  "mobile_type": {
+   "engine": "mobile",
+   "label": "Type (phone)",
+   "ports": [],
+   "settings": [
+    "clearFirst",
+    "credential",
+    "credentialUuid",
+    "optional",
+    "pressAfter",
+    "target",
+    "timeout",
+    "totpUuid",
+    "value"
+   ]
+  },
+  "mobile_wait": {
+   "engine": "mobile",
+   "label": "Wait (phone)",
+   "ports": [],
+   "settings": [
+    "package",
+    "target",
+    "timeout",
+    "until"
+   ]
+  },
+  "navigate": {
+   "engine": "web",
+   "label": "Navigate",
+   "ports": [],
+   "settings": [
+    "dateFormat",
+    "url"
+   ]
+  },
+  "outlook_send": {
+   "engine": "web",
+   "label": "Send Email (Outlook)",
+   "ports": [],
+   "settings": [
+    "account",
+    "attachments",
+    "bcc",
+    "body",
+    "bodyFormat",
+    "cc",
+    "importance",
+    "mode",
+    "outputVariable",
+    "subject",
+    "to"
+   ]
+  },
+  "pdf_read": {
+   "engine": "web",
+   "label": "Read PDF",
+   "ports": [],
+   "settings": [
+    "fields",
+    "mode",
+    "outputVariable",
+    "pages",
+    "path"
+   ]
+  },
+  "press_key": {
+   "engine": "web",
+   "label": "Press Key",
+   "ports": [],
+   "settings": [
+    "alt",
+    "ctrl",
+    "key",
+    "meta",
+    "selector",
+    "shift"
+   ]
+  },
+  "read_file": {
+   "engine": "web",
+   "label": "Read File",
+   "ports": [],
+   "settings": [
+    "path",
+    "variable"
+   ]
+  },
+  "read_product": {
+   "engine": "web",
+   "label": "Read Product",
+   "ports": [],
+   "settings": [
+    "outputVariable",
+    "previous",
+    "target",
+    "url"
+   ]
+  },
+  "research": {
+   "engine": "web",
+   "label": "Research",
+   "ports": [],
+   "settings": [
+    "budget",
+    "list",
+    "outputVariable",
+    "path",
+    "question",
+    "sheet"
+   ]
+  },
+  "retry_try": {
+   "engine": "web",
+   "label": "Try",
+   "ports": [],
+   "settings": []
+  },
+  "run_project": {
+   "engine": "web",
+   "label": "Run Project",
+   "ports": [],
+   "settings": [
+    "inputs",
+    "outputPrefix",
+    "outputs",
+    "projectId"
+   ]
+  },
+  "scroll": {
+   "engine": "web",
+   "label": "Scroll",
+   "ports": [],
+   "settings": [
+    "amount",
+    "direction"
+   ]
+  },
+  "skip_row": {
+   "engine": "web",
+   "label": "Skip Row",
+   "ports": [],
+   "settings": [
+    "message"
+   ]
+  },
+  "stop_run": {
+   "engine": "web",
+   "label": "Stop Run",
+   "ports": [],
+   "settings": [
+    "message"
+   ]
+  },
+  "tab_close": {
+   "engine": "web",
+   "label": "Close Tab",
+   "ports": [],
+   "settings": []
+  },
+  "tab_open": {
+   "engine": "web",
+   "label": "Open Tab",
+   "ports": [],
+   "settings": [
+    "url"
+   ]
+  },
+  "try": {
+   "engine": "web",
+   "label": "Try",
+   "ports": [
+    "body",
+    "catch",
+    "finally",
+    "next"
+   ],
+   "settings": []
+  },
+  "type": {
+   "engine": "web",
+   "label": "Type",
+   "ports": [],
+   "settings": [
+    "dateFormat",
+    "extract",
+    "extractAs",
+    "extractAttribute",
+    "optional",
+    "optionalSeconds",
+    "preferXpath",
+    "selector",
+    "value",
+    "xpath"
+   ]
+  },
+  "wait": {
+   "engine": "web",
+   "label": "Wait",
+   "ports": [],
+   "settings": [
+    "minLength",
+    "onTimeout",
+    "seconds",
+    "selector",
+    "until"
+   ]
+  },
+  "wait_download": {
+   "engine": "web",
+   "label": "Wait For Download",
+   "ports": [],
+   "settings": [
+    "moveTo",
+    "outputVariable",
+    "seconds"
+   ]
+  },
+  "wait_for": {
+   "engine": "web",
+   "label": "Wait For Element",
+   "ports": [],
+   "settings": [
+    "seconds",
+    "selector"
+   ]
+  },
+  "while": {
+   "engine": "web",
+   "label": "While Loop",
+   "ports": [
+    "body",
+    "next"
+   ],
+   "settings": []
+  },
+  "write_file": {
+   "engine": "web",
+   "label": "Write File",
+   "ports": [],
+   "settings": [
+    "append",
+    "content",
+    "path"
+   ]
+  }
+ }
+}
